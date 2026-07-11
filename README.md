@@ -20,11 +20,10 @@ Prometheus-Grafana,\
 Ansible\
 }
 
-echo ":white_check_mark: devopshub directory structure created successfully."
+# Create .gitkeep in every directory
+find devopshub -type d -exec touch {}/.gitkeep \;
 
-echo
-echo "Directory structure:"
-tree devopshub 2>/dev/null || find devopshub -type d | sort
+echo "Directory structure created successfully."
 ```
 
 ### Usage
